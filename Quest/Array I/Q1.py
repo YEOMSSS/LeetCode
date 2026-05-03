@@ -4,7 +4,7 @@
 
 # Authored by : marigold2003
 # Date : 2026-05-01
-# Problem Number : Array I - Q1
+# Problem Number : 1929
 
 
 # [Problem] Concatenation of Array
