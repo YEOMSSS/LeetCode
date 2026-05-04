@@ -3,7 +3,7 @@
 # -------------------------------
 
 # Authored by : marigold2003
-# Date : 2026-05-04
+# Date : 2026-05-05
 # Problem Number : 0000000000
 
 
@@ -32,13 +32,17 @@ def solve():
     return
 
 
+# -------------------------------
 # [LeetCode]
+# -------------------------------
 
 
 class Solution:
     def func(self):
         return solve()
 
+
+# -------------------------------
 
 # [Summary]
 
