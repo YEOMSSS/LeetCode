@@ -18,3 +18,6 @@ def sieve(n):
 
     # 결과 확인: True인 인덱스만 반환
     return [i for i in range(2, n + 1) if is_prime[i]]
+
+
+print(len(sieve(1000000)))
