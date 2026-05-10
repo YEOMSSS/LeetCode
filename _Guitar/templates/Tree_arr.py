@@ -1,19 +1,11 @@
-# 13 12
+# 12 # 간선 개수
 # 1 2 1 3 2 4 3 5 3 6 4 7 5 8 5 9 6 10 6 11 7 12 11 13
-
-
-import sys
-
-sys.stdin = open(
-    r"C:\Users\junha\OneDrive\Desktop\LeetCode\00. Data Structure\input.txt",
-    "r",
-)
-input = sys.stdin.readline
 
 # --------------------------------------------------------
 
 # vertex, edge
-V, E = map(int, input().split())
+E = int(input())
+V = E + 1
 Tree = [[0] * 5 for _ in range(V + 1)]
 Data = list(map(int, input().split()))
 
@@ -46,6 +38,8 @@ for i in range(E):
         Tree[child][3] = parent
         Tree[child][4] = Tree[parent][4] + 1
 
+# --------------------------------------------------------
+
 
 def preorder_traversal(N):
     if N:
@@ -77,8 +71,8 @@ def levelorder_treversal(N):
     queue.append(N)
     count = 0
     while queue:
-        if list(set(queue)) != [0]:
-            print(f"레벨 {count}: ", end="")
+        # if list(set(queue)) != [0]:
+        #     print(f"레벨 {count}: ", end="")
         for _ in range(len(queue)):
             curr = queue.popleft()
             if curr:
@@ -90,17 +84,10 @@ def levelorder_treversal(N):
 
 
 print()
-print("PREORDER: ", end="")
 preorder_traversal(1)
 print()
-print()
-print("INORDER: ", end="")
 inorder_traversal(1)
 print()
-print()
-print("POSTORDER: ", end="")
 postorder_treversal(1)
 print()
-print()
-print("LEVELORDER")
 levelorder_treversal(1)
