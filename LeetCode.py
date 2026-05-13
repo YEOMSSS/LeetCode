@@ -1,9 +1,11 @@
+from typing import List, Optional
+
 # -------------------------------
 # Link : 0000000000000000000000
 # -------------------------------
 
 # Authored by : marigold2003
-# Date : 2026-05-13
+# Date : 2026-05-14
 # Problem Number : 0000000000
 
 # -------------------------------
@@ -21,19 +23,6 @@
 
 # 구체적인 계획, 간단한 문제에는 필요 없음
 
-# -------------------------------
-
-
-def solve():
-
-    ##########
-
-    # code here
-
-    ##########
-
-    return
-
 
 # -------------------------------
 # [LeetCode]
@@ -42,7 +31,7 @@ def solve():
 
 class Solution:
     def func(self):
-        return solve()
+        return
 
 
 # -------------------------------
@@ -55,19 +44,3 @@ class Solution:
 # [Review]
 
 # 리뷰
-
-# -------------------------------
-# -------------------------------
-
-
-import sys
-
-input = sys.stdin.readline
-
-if __name__ == "__main__":
-
-    # [Input]
-
-    # input here
-
-    print(solve())
