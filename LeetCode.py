@@ -1,11 +1,9 @@
-from typing import List, Optional
-
 # -------------------------------
 # Link : 0000000000000000000000
 # -------------------------------
 
 # Authored by : marigold2003
-# Date : 2026-05-17
+# Date : 2026-05-18
 # Problem Number : 0000000000
 
 # -------------------------------
@@ -25,7 +23,11 @@ from typing import List, Optional
 
 
 # -------------------------------
+
 # [LeetCode]
+
+from typing import List, Optional
+
 # -------------------------------
 
 
