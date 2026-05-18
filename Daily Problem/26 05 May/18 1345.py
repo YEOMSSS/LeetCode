@@ -60,10 +60,8 @@ class Solution:
         N = len(arr)
 
         can_move = defaultdict(set)
-
         for i, v in enumerate(arr):
             can_move[v].add(i)
-
         # print(can_move)
 
         queue = deque()
