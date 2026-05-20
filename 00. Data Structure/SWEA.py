@@ -11,7 +11,7 @@ input = sys.stdin.readline
 
 
 # Authored by : marigold2003
-# Date : 2026-05-10
+# Date : 2026-05-20
 # Problem Number : 0000000000
 
 
@@ -31,7 +31,7 @@ def main() -> None:
     T = int(input())
 
     for tc in range(1, T + 1):
-        result = 0
+        result = 0  # 불필요 시 제거
         print(f"#{tc} {result}")
 
     ##########
