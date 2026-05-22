@@ -56,9 +56,16 @@ def b_search(nums: list) -> int:
     return nums[left]
 
 
+from bisect import bisect_left
+
+
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         return b_search(nums)
+
+    def findMin2(self, nums: List[int]) -> int:
+        # 와, 나... bisect 기능 겁나 많네.
+        return nums[bisect_left(nums, True, key=lambda x: x <= nums[-1])]
 
 
 # -------------------------------

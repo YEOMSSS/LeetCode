@@ -63,9 +63,22 @@ def b_search(nums: list) -> int:
     return nums[left]
 
 
+from bisect import bisect_left
+
+
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         return b_search(nums)
+
+    def findMin2(self, nums: List[int]) -> int:
+        # 맨 앞과 동일한 오른쪽 끝을 다 없애준다.
+        while len(nums) > 1 and nums[0] == nums[-1]:
+            nums.pop()
+
+        # 이걸로 거르면 FFFFTTT형태만 나오면 되니까.
+        # 비교에 끝인덱스가 포함되니까 <=를 사용해야만 하는데
+        # 앞에 오른쪽끝이랑 겹치는게 있으면 안되잖아. 바로 끝나버리니깐.
+        return nums[bisect_left(nums, True, key=lambda x: x <= nums[-1])]
 
 
 # -------------------------------
