@@ -1,12 +1,3 @@
-import sys
-
-sys.stdin = open(
-    r"C:\Users\junha\OneDrive\Desktop\LeetCode\00. Data Structure\input.txt",
-    "r",
-)
-input = sys.stdin.readline
-
-
 V, E = map(int, input().split())
 Graph = {i: [] for i in range(1, V + 1)}
 
@@ -23,8 +14,6 @@ def dfsR(curr):
     print(curr, end=" ")
 
     for nei in Graph[curr]:
-        if not visited[nei]:
-            dfsR(nei)
-
-
-dfsR(1)
+        if visited[nei]:
+            continue
+        dfsR(nei)

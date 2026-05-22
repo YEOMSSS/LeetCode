@@ -11,7 +11,7 @@ input = sys.stdin.readline
 
 
 # Authored by : marigold2003
-# Date : 2026-05-20
+# Date : 2026-05-22
 # Problem Number : 0000000000
 
 
