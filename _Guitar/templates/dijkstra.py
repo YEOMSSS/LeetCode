@@ -4,19 +4,20 @@ from heapq import heappop, heappush
 def dijkstra(graph, start, end=None):
     n = len(graph)
 
-    heap = [(0, start)]
+    min_heap = [(0, start)]
     seen = set()
     d = [float("inf")] * n
     d[start] = 0
-    while heap:
-        _, curr = heappop(heap)
+
+    while min_heap:
+        _, curr = heappop(min_heap)
         if curr in seen:
             continue
         seen.add(curr)
         for child, w in graph[curr]:
             if d[curr] + w < d[child]:
                 d[child] = d[curr] + w
-                heappush(heap, (d[child], child))
+                heappush(min_heap, (d[child], child))
 
     if end:
         return d[end]
