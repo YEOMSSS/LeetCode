@@ -32,6 +32,7 @@ def bfs(start):
             if nxt > Zombie:
                 continue
             # 가지치기. 이미 Time[nxt]가 부모+1 보다 작거나 같다면 갱신할 필요가 없음
+            # = 이미 방문했다면의 의미가 된다.
             if Time[nxt] <= Time[curr] + 1:
                 continue
             Time[nxt] = Time[curr] + 1
